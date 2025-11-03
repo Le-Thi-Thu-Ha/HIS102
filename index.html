@@ -1,0 +1,292 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Parcours Révolution | A Travel Log of the French Revolution</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&family=Playfair+Display:wght@700&display=swap"
+        rel="stylesheet">
+    <style>
+        /* Custom styles */
+        :root {
+            --primary: #9d2a2a;
+            /* Deep Revolutionary Red */
+            --secondary: #333;
+            --background: #fdfdfd;
+        }
+
+        body {
+            font-family: 'Inter', sans-serif;
+            background-color: var(--background);
+        }
+
+        .header-font {
+            font-family: 'Playfair Display', serif;
+        }
+
+        .revolutionary-border {
+            border-left: 5px solid var(--primary);
+            padding-left: 1rem;
+        }
+
+        .card {
+            box-shadow: 0 10px 15px -3px rgba(0, 0, 0, 0.1), 0 4px 6px -2px rgba(0, 0, 0, 0.05);
+            transition: transform 0.3s ease-in-out;
+        }
+
+        .card:hover {
+            transform: translateY(-5px);
+        }
+
+        .primary-button {
+            background-color: var(--primary);
+            transition: background-color 0.3s;
+        }
+
+        .primary-button:hover {
+            background-color: #7c2020;
+        }
+    </style>
+</head>
+
+<body class="antialiased text-gray-800">
+
+    <!-- Header & Navigation -->
+    <header class="bg-white shadow-lg sticky top-0 z-10">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-4 flex justify-between items-center">
+            <h1 class="text-3xl font-bold header-font text-gray-800">
+                <span class="text-red-700">P.R.</span> <span class="hidden sm:inline">Travel Log</span>
+            </h1>
+            <!-- UPDATED NAVIGATION: Includes Posts, Parcours App, and a grouped 'Source:' section with four links -->
+            <nav class="space-x-2 sm:space-x-4 flex flex-wrap justify-center text-sm sm:text-base">
+                <a href="#posts" class="text-gray-600 hover:text-red-700 font-medium whitespace-nowrap">Posts</a>
+                <a href="#parcours" class="text-gray-600 hover:text-red-700 font-medium whitespace-nowrap">Parcours
+                    App</a>
+
+                <!-- Source Grouping -->
+                <span
+                    class="font-bold text-gray-800 whitespace-nowrap hidden sm:inline border-l pl-4 border-gray-300">Source:</span>
+                <a href="https://www.ebsco.com/research-starters/history/reign-terror" target="_blank"
+                    class="text-gray-600 hover:text-red-700 font-medium whitespace-nowrap">Reign of Terror – EBSCO</a>
+                <a href="https://www.britannica.com/biography/Louis-XVI" target="_blank"
+                    class="text-gray-600 hover:text-red-700 font-medium whitespace-nowrap">Louis XVI – Britannica</a>
+                <a href="https://parcoursrevolution.paris.fr/en/about" target="_blank"
+                    class="text-gray-600 hover:text-red-700 font-medium whitespace-nowrap">Parcours Révolution</a>
+                <a href="https://www.youtube.com/watch?v=oRut9TbcyeE" target="_blank"
+                    class="text-gray-600 hover:text-red-700 font-medium whitespace-nowrap">French Revolution Video –
+                    YouTube</a>
+            </nav>
+        </div>
+    </header>
+
+    <!-- Hero Section -->
+    <section class="bg-gray-900 py-20 text-white"
+        style="background-image: url('./images/pure-black-background-wcs86b1g1awsprv8.jpg'); background-size: cover; background-position: center;">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center bg-black bg-opacity-50 p-6 rounded-xl">
+            <h2 class="header-font text-5xl sm:text-7xl font-bold mb-4">
+                Liberty, Equality, Blog!
+            </h2>
+            <p class="text-xl max-w-2xl mx-auto mb-6">
+                A modern journey through the tumultuous heart of the French Revolution (1789–1799). From the gilded
+                halls of Versailles to the grim scaffold of the guillotine.
+            </p>
+            <a href="#posts"
+                class="inline-block primary-button text-white font-bold py-3 px-8 rounded-lg shadow-xl hover:shadow-2xl">
+                Explore The History
+            </a>
+        </div>
+    </section>
+
+    <!-- Main Content - Blog Posts -->
+    <main class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-12">
+        <h2 id="posts" class="header-font text-4xl font-bold text-gray-900 mb-10 revolutionary-border">The Revolution
+            Log: Featured Posts</h2>
+
+        <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+
+            <!-- Post 1: Palace of Versailles -->
+            <article class="card bg-white rounded-xl overflow-hidden border border-gray-100 shadow-md">
+                <img class="w-full h-48 object-cover"
+                    src="https://placehold.co/600x400/e7e5e4/333333?text=Versailles+Palace" alt="Palace of Versailles">
+                <div class="p-6">
+                    <h3 class="header-font text-2xl font-bold text-gray-900 mb-3">Post 1: Echoes of Excess at Versailles
+                    </h3>
+                    <p class="text-sm text-gray-500 mb-4">Posted: Jul 14, 1789 (The Storm)</p>
+                    <p class="text-gray-700 mb-4 text-justify">Standing here, in the Hall of Mirrors, it’s impossible to
+                        reconcile this dazzling opulence with the starvation in Paris. This palace, built to showcase
+                        absolute power, became a symbol of the monarchy's detachment. The sheer scale—700 rooms and
+                        endless gardens—makes the subsequent fall of Louis XVI almost inevitable. It's a gold-plated
+                        bubble that finally burst.</p>
+                    <a href="https://en.chateauversailles.fr/" class="text-red-700 font-semibold hover:underline">Read More →</a>
+                </div>
+            </article>
+
+            <!-- Post 2: Execution of Louis XVI -->
+            <article class="card bg-white rounded-xl overflow-hidden border border-gray-100 shadow-md">
+                <img class="w-full h-48 object-cover"
+                    src="https://placehold.co/600x400/991b1b/ffffff?text=Place+de+la+Concorde"
+                    alt="Execution of Louis XVI">
+                <div class="p-6">
+                    <h3 class="header-font text-2xl font-bold text-gray-900 mb-3">Post 2: The Fall of Citizen Capet</h3>
+                    <p class="text-sm text-gray-500 mb-4">Posted: Jan 21, 1793 (A Nation Divided)</p>
+                    <p class="text-gray-700 mb-4 text-justify">The Place de la Révolution (now Place de la Concorde)
+                        felt electric. The execution of Louis XVI, or 'Citizen Capet,' wasn't just a regicide; it was
+                        the irreversible death of absolute monarchy in France. His indecisiveness and the disastrous
+                        flight to Varennes sealed his fate. The guillotine’s blade dropped, and with it, the foundation
+                        of the First Republic was violently laid. The crowd's cheer was deafening.</p>
+                    <a href="https://www.britannica.com/event/French-Revolution" class="text-red-700 font-semibold hover:underline">Read More →</a>
+                </div>
+            </article>
+
+            <!-- Post 3: Reign of Terror -->
+            <article class="card bg-white rounded-xl overflow-hidden border border-gray-100 shadow-md">
+                <img class="w-full h-48 object-cover"
+                    src="https://placehold.co/600x400/4c4c4c/ffffff?text=Guillotine+Shadow" alt="Reign of Terror">
+                <div class="p-6">
+                    <h3 class="header-font text-2xl font-bold text-gray-900 mb-3">Post 3: The Dark Turn of the Terror
+                    </h3>
+                    <p class="text-sm text-gray-500 mb-4">Posted: Sept 5, 1793 (The Law of Suspects)</p>
+                    <p class="text-gray-700 mb-4 text-justify">The idealism of 'Liberty' has curdled into paranoia under
+                        Robespierre's Committee of Public Safety. The 'Law of Suspects' made enemies of everyone. An
+                        estimated 17,000 official executions occurred, turning revolutionary fervor into
+                        state-sanctioned mayhem. This ten-month purge, characterized by the chilling efficiency of the
+                        guillotine, shows the tragic speed at which a fight for rights can devolve into pure, chaotic
+                        fear.</p>
+                    <a href="https://journals.sagepub.com/doi/10.1177/17416590231218744" class="text-red-700 font-semibold hover:underline">Read More →</a>
+                </div>
+            </article>
+
+        </div>
+    </main>
+
+    <!-- Parcours Révolution App Log Section -->
+    <section id="parcours" class="bg-gray-100 py-16">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <h2 class="header-font text-4xl font-bold text-gray-900 mb-10 revolutionary-border">Parcours Révolution: A
+                Day in Paris</h2>
+            <p class="mb-8 max-w-3xl text-gray-600">
+                Inspired by the *Parcours Révolution* app, this is a simulated 'daily log' following a revolutionary
+                figure as they move through key Parisian neighborhoods.
+            </p>
+
+            <div class="bg-white p-8 rounded-xl shadow-lg">
+                <div id="log-display" class="space-y-6">
+                    <!-- Log entries will be populated here by JavaScript -->
+                    <div class="text-center text-gray-500 py-4">Click "Simulate Day" to generate a revolutionary log
+                        entry.</div>
+                </div>
+                <div class="mt-8 text-center">
+                    <button id="simulate-button"
+                        class="primary-button text-white font-bold py-3 px-8 rounded-lg shadow-xl hover:shadow-2xl">
+                        Simulate Day: June 1793
+                    </button>
+                    <!-- Video Embed -->
+                    <div class="mt-8">
+                        <h3 class="text-2xl font-bold header-font mb-4 text-gray-900">Experience Revolutionary Paris
+                        </h3>
+                        <div class="relative w-full max-w-2xl mx-auto" style="padding-top: 56.25%;">
+                            <!-- 16:9 Aspect Ratio --><iframe
+                                class="absolute top-0 left-0 w-full h-full rounded-lg shadow-lg"
+                                src="https://www.youtube.com/embed/oRut9TbcyeE"
+                                title="Parcours Révolution: la nouvelle application de la Ville de Paris"
+                                frameborder="0"
+                                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                                allowfullscreen></iframe>
+                        </div>
+                        <p class="text-sm text-gray-500 mt-4">
+                            Video: "Parcours Révolution" : la nouvelle application de la Ville de Paris
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+    <!-- Footer -->
+    <footer id="about" class="bg-gray-800 text-white py-8">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
+            <p class="mb-4 text-gray-400">&copy; 2025 Parcours Révolution Travel Log. Powered by the spirit of '89.</p>
+            <div class="text-sm">
+                <h4 class="font-semibold text-red-500 mb-2">Sources Used for Content & Concept:</h4>
+                <ul class="list-disc list-inside text-gray-400 space-y-1 inline-block text-left">
+                    <li><a href="https://www.ebsco.com/research-starters/history/reign-terror" target="_blank"
+                            class="hover:text-red-400">EBSCOhost - Reign of Terror Key Facts</a></li>
+                    <li><a href="https://www.britannica.com/biography/Louis-XVI" target="_blank"
+                            class="hover:text-red-400">Britannica - Louis XVI Biography and Execution</a></li>
+                    <li><a href="https://parcoursrevolution.paris.fr/en/about" target="_blank"
+                            class="hover:text-red-400">Parcours Révolution Official Website (App Concept)</a></li>
+                    <li><a href="https://www.youtube.com/watch?v=oRut9TbcyeE" target="_blank"
+                            class="hover:text-red-400">YouTube - "Parcours Révolution" : la nouvelle application de la
+                            Ville de Paris</a></li>
+                </ul>
+            </div>
+        </div>
+    </footer>
+
+    <script>
+        // Data for the simulation
+        const figures = [
+            { name: "Citizen Dupont", role: "Journalist", faction: "Jacobin" },
+            { name: "Citizeness Marie", role: "Sans-Culotte", faction: "Radical" },
+            { name: "M. Danton", role: "Lawyer", faction: "Montagnard" },
+            { name: "Mme. Roland", role: "Salon Hostess", faction: "Girondin" }
+        ];
+
+        const locations = [
+            { name: "Place de la Concorde (Place de la Révolution)", event: "Witnessed the morning's latest execution." },
+            { name: "Palais Royal", event: "Distributed copies of the latest revolutionary pamphlet." },
+            { name: "Jardin des Plantes (Left Bank)", event: "Met secretly with allies to discuss the supply of bread." },
+            { name: "Odéon Theatre Neighborhood", event: "Attended a politically charged play criticizing the monarchy." },
+            { name: "The Jacobin Club", event: "Delivered a rousing speech on the necessity of virtue and terror." }
+        ];
+
+        const logDisplay = document.getElementById('log-display');
+        const simulateButton = document.getElementById('simulate-button');
+
+        function getRandomItem(array) {
+            return array[Math.floor(Math.random() * array.length)];
+        }
+
+        function generateLogEntry() {
+            const figure = getRandomItem(figures);
+            const location = getRandomItem(locations);
+            const time = `${Math.floor(Math.random() * 5) + 8}:00`; // 8:00 to 12:00
+            const dayOfMonth = Math.floor(Math.random() * 28) + 1;
+
+            const logEntry = `
+                <div class="revolutionary-border p-4 bg-red-50 rounded-lg border-red-200">
+                    <p class="text-xs text-red-700 font-bold mb-1">LOG ENTRY: June ${dayOfMonth}, 1793, approx. ${time}</p>
+                    <h4 class="text-xl font-semibold mb-2">${figure.name} (${figure.role}, ${figure.faction})</h4>
+                    <p class="text-gray-700"><strong>Location:</strong> ${location.name}</p>
+                    <p class="text-gray-700"><strong>Action:</strong> ${location.event}</p>
+                </div>
+            `;
+            return logEntry;
+        }
+
+        function runSimulation() {
+            logDisplay.innerHTML = '';
+            // Generate between 3 and 5 log entries for the day
+            const numEntries = Math.floor(Math.random() * 3) + 3;
+            let logHTML = '';
+            for (let i = 0; i < numEntries; i++) {
+                logHTML += generateLogEntry();
+            }
+            logDisplay.innerHTML = logHTML;
+        }
+
+        simulateButton.addEventListener('click', runSimulation);
+
+        // Initial run on load
+        window.onload = function () {
+            runSimulation();
+        };
+
+    </script>
+</body>
+
+</html>
